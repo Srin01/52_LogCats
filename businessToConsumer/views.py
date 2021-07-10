@@ -19,6 +19,23 @@ class ProductDetail(DetailView):
     template_name = 'product.html'
 
 
+def InventorySales(request):
+
+    items=Item.objects.all()
+    dictionary= {}
+    list = [0,1,2,3,4,5]
+    for val in items:
+
+        i=getattr(val, 'title')
+        dictionary['title']=i
+        dictionary['count'] = 0
+
+    for val in items:
+        i=getattr(val, 'title')
+        dictionary['count']+=1
+    return render(request,'hell.html',{'dictionary': dictionary, 'list':list})
+
+
 class MyAccount(LoginRequiredMixin, View):
     def get(self, *args, **kwargs):
         return render(self.request, 'My_account.html')
