@@ -46,7 +46,8 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 <div class="container-fluid">
     <a class="navbar-brand waves-effect" href="{% url 'home' %}">
-      <img class="ml-0 pl-0" style="height: 40px;" src="{% static 'logo-black.svg' %}" alt="Logo">
+      <!-- <img class="ml-0 pl-0" style="height: 40px;" src="{% static 'logo-black.svg' %}" alt="Logo"> -->
+      <h2>LogCats Ecom</h2>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,11 +63,11 @@
     <ul class="navbar-nav nav-flex-icons">
       {% if request.user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link waves-effect" href="#">Hello, {{request.user.username}}
+          <a class="nav-link waves-effect" href="{% url 'my_account' %}">Hello, {{request.user.username}}
           </a>
         </li>
         <li class="nav-item">
-        <a href="#" class="nav-link waves-effect">
+        <a href="{% url 'order_summary' %}" class="nav-link waves-effect">
             <i class="fas fa-shopping-cart"></i>
             <span class="clearfix d-none d-sm-inline-block"> Cart </span>
         </a>
