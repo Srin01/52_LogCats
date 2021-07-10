@@ -18,168 +18,284 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'>
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
-
-    @media (max-width: 740px) {
-
+    <style type="text/css">
       html,
       body,
-      header,
+      header,  
       .carousel {
-        height: 100vh;
+        height: 60vh;
       }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    *{
-    margin:0px;
-    padding: 0px;
-}
-.container1{
-    width: 100%;
-    height:28vh;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-/*Styling the body*/
-body{
-    background: white url('{% static 'images/static/images/signup.jpg' %}') no-repeat;
-    background-size:cover;
-}
-
-/*Styling the name Signup*/
-h1{
-    border-bottom: 3px solid blue;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    color:#000;
-    font-weight: bold;
-    background: none;
-    margin-right: 105px;
-    margin-top: 25px;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    left: 55px;
-}
-
-/*Styling the class container*/
-.container{
-    width: 100%;
-     height:80vh;
-    display:flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: left;
-    top:20px;
-}
-.row1{
-    position: absolute;
-    top: 50px;
-    width: 40%;
-    height: 80%;
-    border: 3px solid #D1F5D3;
-    border-radius:5px;
-    background-color: #D1F5D3;
-    opacity: .8;
-}
-
-/*Styling and positioning the login form*/
-.row{
-    position: relative;
-    color:#000;
-     left:75px;
-}
-.row input{
-    position: relative;
-    left:-2px;
-    width:120%;
-    outline:none;
-    background: none;
-    border: 0px;
-    border-bottom:3px solid blue;
-    font-family: 'Cormorant Garamond', serif;
-    color: #000;
-    font-size: 25px;
-}
-.row i{
-    position: absolute;
-    left:25px;
-    padding-bottom:40px;
-    color: #fff;
-}
-/*Styling the buttons in the login*/
-.btn{
-    width: 10rem;
-    height: 50px;
-    background-color:blue;
-    font-family: 'Cormorant Garamond', serif;
-    position: relative;
-    left: 120px;
-    color: white;
-    font-weight: bold;
-    font-size:20px;
-}
-.btn:hover{
-    background-color: green;
-    color:white;
-}
-.row label
-{
-    color:#000;
-    font-family: 'EB Garamond', serif;
-    font-size:25px;
-
+  
+      *{
+      margin:0px;
+      padding: 0px;
   }
-   .row a
-    {
-        font-size:25px;
-        color:blue;
-        position:relative;
-        border-bottom:1px solid blue;
-     }
-     .row a:hover
-     {
-        color:green;
-        border-bottom:1px solid green;
-        }
-       .row span
+  .container1{
+      width: 100%;
+      height:28vh;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  body{
+      background: url("https://take-root.ca/wp-content/uploads/2016/09/vegetarian-food-background-set-of-vegetarian-products-on-the-gray-picture-id641620530.jpg");
+      background-repeat:no-repeat;
+      width: 100%;
+      height: 110vh;
+  }
+  
+  
+  h1{
+      border-bottom: 3px solid blue;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      color:white;
+      font-weight: bold;
+      background: none;
+      margin-right: 105px;
+      margin-top: 25px;
+      font-size:3vw;
+      font-family: 'Open Sans', sans-serif;
+      position: relative;
+      left: 55px;
+  }
+  
+  .container{
+      width: 100%;
+       height:80vh;
+      display:flex;
+      justify-content:center;
+      flex-direction: column;
+      align-items: left;
+      top:20px;
+  }
+  .row1{
+     align-self: center;
+      margin-top: 100px;
+      width: 45%;
+      height: 125%;
+      border: 3px solid black;
+      border-radius:5px;
+      background-color: black;
+      opacity: .8;
+      color:white;
+  }
+  
+  
+  .row{
+      position: relative;
+       left:68px;
+       color:white;
+  }
+  .row input{
+    margin-bottom:10px;
+      position: relative;
+      left:-2px;
+      width:70%;
+      outline:none;
+      background: none;
+      border: 0px;
+      border-bottom:3px solid blue;
+      font-family: 'Cormorant Garamond', serif;
+      color: white;
+      font-size: 1.5vw;
+  }
+  .row i{
+      position: absolute;
+      left:25px;
+      padding-bottom:40px;
+      color: #fff;
+  }
+  
+  .btn{
+      width: 8em;
+      height: 40px;
+      background-color:blue;
+      font-family: 'Cormorant Garamond', serif;
+      color: white;
+      font-weight: bold;
+      font-size:1.5vw;
+      align-self: center;
+      position:unset;
+  }
+  .btn:hover{
+      background-color: green;
+      color:white;
+  }
+  label
+  {
+      color:white;
+      font-family: 'EB Garamond', serif;
+      font-size:2vw;
+  
+    }
+     .row a
+      {
+          font-size:1.5vw;
+          text-decoration: none;
+          color:blue;
+          position:relative;
+       }
+       .row a:hover
        {
-            position:relative;
-            left:50px;
-            font-size:25px;
-            color:black;
-            }
-      .row span
-      {
-        font-size:15px;
-      }
-      #links p a,#links1 p a
-      {
-        font-size:15px;
-      }
-      p a: hover
-      {
-      color:green;
-      }
-  </style>
+          color:green;
+          border-bottom:1px solid green;
+          }
+         .row span
+         {
+              color:white;
+              }
+        .row span
+        {
+          font-size:1.3vw;
+          color:white;
+        }
+        #links p a,#links1 p a
+        {
+          font-size:1vw;
+        }
+        #userinput
+        {
+          width:600%;
+        }
+        @media screen and (max-width:1007px)
+        {
+  
+          .row1 {
+            width: 96%;
+          }
+          .btn{
+            width:10rem;
+          }
+        }
+        @media screen and (max-width:990px)
+        {
+  
+          .row1 {
+            width: 100%;
+          }
+          
+        }
+        @media screen and (max-width:770px)
+        {
+  
+          .row1 {
+            width: 100%;
+          }
+          .btn{
+            display: inline;
+            margin-top:100px;
+            margin-left:-45vw;
+            margin-bottom: 5vw;
+          }
+          
+        }
+        @media screen and (max-width:700px)
+        {
+  
+          .row1 {
+            width: 96%;
+          }
+          h1 
+          {
+            font-size:25;
+          }
+        
+         .row a 
+         {
+           font-size:18;
+         }
+         label 
+         {
+           font-size:18;
+           margin-left:-7vw;
+         }
+         .btn{
+            display: inline;
+            margin-top:100px;
+            margin-left:-45vw;
+            margin-bottom: 5vw;
+            font-size:3vw;
+
+         }
+         .row input 
+         {
+           font-size:15;
+           margin-left:-6vw;
+         }
+        }
+        @media screen and (max-width:530px)
+        {
+  
+          .row span {
+            font-size: 12;
+          }
+          .row a 
+         {
+           font-size:15;
+         }
+        }
+        @media screen and (max-width:450px)
+        {
+          label 
+          {
+            font-size:3.5vw;
+          }
+          .row1{
+            width:100%;
+          }
+          .row input 
+          {
+            font-size:2.5vw;
+          }
+        }
+
+        @media screen and (max-width:400px)
+        {
+          .row1 {
+            width: 96%;
+          }
+          h1 
+          {
+            font-size:8vw;
+          }
+          .row span
+        {
+          font-size:4vw;
+        }
+         .row a 
+         {
+           font-size:5vw;
+         }
+         label 
+         {
+           font-size:5vw;
+         }
+         .btn{
+           font-size:3vw;
+           height: 10vw;
+           width:30vw;
+           margin-left: -30vw;
+         }
+         .row input 
+         {
+           font-size:4vw;
+         }
+        }
+        @media screen and (max-width:300px)
+        {
+  
+          .row1 {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+    </style>
 </head>
 
 
@@ -188,7 +304,7 @@ h1{
 
      <div class="container">
      	<div class="row1">
-     		<h1>{% trans "Sign In" %}</h1>
+     		<h1>{% trans "Sign In" %} </h1>
           {% get_providers as socialaccount_providers %}
       {% if socialaccount_providers %}
       <p >{% blocktrans with site.name as site_name %}Please sign in with one
@@ -208,7 +324,7 @@ h1{
       {% include "socialaccount/snippets/login_extra.html" %}
 
       {% else %}
-      <p style="color:black;position:relative;left:50px;font-weight:bold;">{% blocktrans %}If you have not created an account yet, then please
+      <p style="color:white;position:relative;left:5%;font-weight:bold;">{% blocktrans %}If you have not created an account yet,<br> then please
       <a  href="{{ signup_url }}" style="color:blue;">sign up</a> first.{% endblocktrans %}</p>
       {% endif %}
 
@@ -219,9 +335,9 @@ h1{
      		{{ form|crispy }}
         {% if redirect_field_value %}
 
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        <input id="userinput" type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-              <button class="btn " type="submit">LogIn</button>
+             <br><br><button class="btn" type="submit">LogIn</button>
 
 
 
@@ -248,103 +364,6 @@ h1{
     {% endfor %}
   {% endif %}
 </div>
-
-
-<footer class="page-footer font-small  pt-4" style="background-color:black;">
-  <div class="container text-center text-md-left">
-    <div class="row text-center text-md-left mt-3 pb-3">
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:white;">Company name</h6>
-        <p style="color:white;font-size:12px;">Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy products and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button?</p>
-        <p style="color:white;font-size:12px;">India’s first comprehensive online megastore, LOGCATS.com, brings a whopping 20000+ products with more than 1000 brands, to over 1 million happy customers. </p>
-      </div>
-      <hr class="w-100 clearfix d-md-none">
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="links1">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:white;">Products</h6>
-       <p style="color:white;">
-          <a href="#!">Sunflower Oil</a>
-        </p >
-        <p style="color:white;">
-          <a href="#!">Wheat Atta</a>
-        </p >
-        <p style="color:white;">
-          <a href="#!">Health drinks</a>
-        </p>
-        <p style="color:white;">
-          <a href="#!">Milk Products</a>
-        </p>
-      </div>
-      <hr class="w-100 clearfix d-md-none">
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" id="links">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:white;">Useful links</h6>
-        <p style="color:white;">
-          <a href="#!">Your Account</a>
-        </p>
-        <p style="color:white;">
-          <a href="#!">Become an Affiliate</a>
-        </p>
-        <p style="color:white;">
-          <a href="#!">Shipping Rates</a>
-        </p>
-        <p style="color:white;">
-          <a href="#!">Help</a>
-        </p>
-      </div>
-      <hr class="w-100 clearfix d-md-none">
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold" style="color:white;">Contact</h6>
-        <p style="color:white;">
-         <i class="fas fa-home mr-3"> </i><span style="color:white;">Bangalore, Karnataka, India</span></p>
-        <p style="color:white;">
-          <i class="fas fa-envelope mr-3"></i><span style="color:white;">logcats@gmail.com</span></p>
-        <p style="color:white;">
-          <i class="fas fa-phone mr-3"></i><span style="color:white;">+91 68384 85291</span></p>
-        <p style="color:white;">
-          <i class="fas fa-print mr-3"></i><span style="color:white;">+91 91204 44332</span></p>
-      </div>
-    </div>
-    <hr>
-    <div class="row d-flex align-items-center">
-      <div class="col-md-7 col-lg-8">
-        <p class="text-center text-md-left" style="color:white;">© 2020 Copyright:
-          <a href="#">
-            <strong>Logcats.pvt.ltd</strong>
-          </a>
-        </p>
-      </div>
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
 
   <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
