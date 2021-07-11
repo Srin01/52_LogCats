@@ -293,3 +293,50 @@ def remove_single_from_cart(request, slug):
     else:
         messages.info(request, "You don't have an active order!")
         return redirect('order_summary')
+
+
+@login_required
+def customerReg(request):
+    return render(request,'customerForm.html')
+
+@login_required
+def afterReg(request):
+    name=request.POST['shopname']
+    pincode=request.POST['pincode']
+    number=request.POST['number']
+    obj=SellerDetails(shopName=name, pincode=pincode,contactNo=number,user=request.user)
+    print(request.user)
+    obj.save()
+    ownedChange=IsLocalGrocery(user=request.user, isOwner=True)
+    ownedChange.isOwner=True
+    ownedChange.save()
+    return render(request,'home.html')
+
+
+@login_required
+def afterReg(request):
+    name=request.POST['shopname']
+    pincode=request.POST['pincode']
+    number=request.POST['number']
+    obj=SellerDetails(shopName=name, pincode=pincode,contactNo=number,user=request.user)
+    print(request.user)
+    obj.save()
+    ownedChange=IsLocalGrocery(user=request.user, isOwner=True)
+    ownedChange.isOwner=True
+    ownedChange.save()
+    return render(request,'home.html')
+
+
+@login_required
+def addItem(request):
+    return render(request,'addItem.html')
+
+    
+@login_required
+def afterAdd(request):
+    title=request.POST['title']
+    price=request.POST['price']
+    discount_price=request.POST['discount_price']
+    obj=Item(title=title,price=price,discount_price=discount_price)
+    obj.save()
+    return render(request,'home.html')
