@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'storages',
     'django_countries',
     'crispy_forms',
+    'Wholesale'
 ]
 
 SITE_ID = 1

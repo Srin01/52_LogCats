@@ -22,6 +22,14 @@ class AddressForm(forms.Form):
         widget=forms.RadioSelect(), choices=PAYMENT_CHOICES)
 
 
+class AddItemForm(ModelForm):
+
+    image=forms.ImageField()
+    class Meta:
+         model = Item
+         fields = '__all__'
+
+
 class CouponForm(forms.Form):
     code = forms.CharField(widget=forms.TextInput(attrs={
         'class': "form-control",

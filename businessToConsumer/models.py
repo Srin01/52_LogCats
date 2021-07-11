@@ -31,6 +31,17 @@ class Item(models.Model):
     def get_remove_single_from_cart_url(self):
         return reverse('remove_single_from_cart', kwargs={'slug': self.slug})
 
+class IsLocalGrocery(models.Model):
+    user= models.OneToOneField(User, on_delete=models.CASCADE)
+    isOwner=models.BooleanField(default=False)
+    
+
+class SellerDetails(models.Model):
+    shopName=models.CharField(max_length=15,null=True)
+    pincode=models.CharField(max_length=6,null=True)
+    user=models.OneToOneField(User, on_delete=models.CASCADE)
+    contactNo=models.CharField(max_length=10,null=True)
+
 
 class OrderItem(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE)
