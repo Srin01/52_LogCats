@@ -16,6 +16,8 @@ from .views import (
     remove_single_from_cart,
     customerReg,
     afterReg,
+    wholesale_shop,
+    nearby_shop
 )
 
 
@@ -36,6 +38,8 @@ urlpatterns = [
     path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
     path('order-summary/', OrderSummaryView.as_view(), name='order_summary'),
     path('product/<slug>/', ProductDetail.as_view(), name='product'),
+    path('wholesale_shop', wholesale_shop, name = 'wholesale_shop'),
+    path('nearby_shop',nearby_shop, name = 'nearby_shop'),
     path('customerReg',customerReg, name='reg'),
     path('afterReg',afterReg, name='after_reg')
 ]

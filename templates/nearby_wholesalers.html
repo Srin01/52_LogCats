@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius:10px ;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card span
+{
+    font-weight:bold;
+}
+.card a
+{
+    text-decoration:none;
+    color:white;
+ }
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">Wholesale shops near me</h2>
+
+{% for shop in shops %}
+<div class="row">
+  <div class="column">
+        <div class="card">
+            <img src="https://cjrwholesale.com/wp/wp-content/uploads/Grocery.jpg" alt="Shop1" style="width:100%">
+            <h1>Shop1</h1>
+            <p class="Contact">+91 96875 32415</p>
+            <p><span>Address:</span>NO. Bangalore </p>
+            <p><span>Products available</span>Sunflower Oil</p>
+            <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+        </div>
+  </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="https://www.gannett-cdn.com/presto/2020/07/29/PDTF/21c78a86-f931-46a5-8e3f-5d943fe05319-BJs_103019_06_MW.jpg" alt="Shop1" style="width:100%;">
+            <h1>Shop2</h1>
+            <p class="Contact">+91 32415 96875 </p>
+            <p><span>Address:</span>NO. Bangalore </p>
+            <p><span>Products available</span>Milk Products</p>
+                <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+        </div>
+    </div>
+
+  <div class="column">
+        <div class="card">
+            <img src="https://st2.depositphotos.com/5648852/8241/i/600/depositphotos_82411468-stock-photo-fresh-produce-cold-room-in.jpg" alt="Shop1" style="width:100%">
+            <h1>Shop3</h1>
+            <p class="Contact">+91 96876 32415</p>
+            <p><span>Address:</span>NO. Bangalore </p>
+            <p><span>Products available</span>Rice</p>
+            <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+        </div>
+  </div>
+
+  <div class="column">
+        <div class="card">
+            <img src="https://pbs.twimg.com/media/EkhrOQSVgAAdaVt.jpg" alt="Shop1" style="width:100%">
+            <h1>Shop4</h1>
+            <p class="Contact">+91 86875 32415</p>
+            <p><span>Address:</span>NO. Bangalore </p>
+            <p><span>Products available</span>Edible Oil</p>
+            <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+        </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+        <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1025726030%2F960x0.jpg%3Ffit%3Dscale" alt="Shop1" style="width:100%">
+        <h1>Shop5</h1>
+        <p class="Contact">+91 96875 52415</p>
+        <p><span>Address:</span>NO. Bangalore </p>
+        <p><span>Products available</span>Dals</p>
+        <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCskBBKr6YLPuc4bO1LJE19zun6_me8W0bXhFMvtuZtyQJ_lRLngaKifOsavORDkTa7s&usqp=CAU" alt="Shop1" style="width:100%">
+        <h1>Shop6</h1>
+        <p class="Contact">+91 96879 32415</p>
+        <p><span>Address:</span>NO. Bangalore </p>
+        <p><span>Products available</span>Biscuts</p>
+        <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+    </div>
+  </div>
+
+    <div class="column">
+    <div class="card">
+         <img src="https://cjrwholesale.com/wp/wp-content/uploads/Grocery.jpg" alt="Shop1" style="width:100%">
+        <h1>Shop7</h1>
+        <p class="Contact">+91 96879 32415</p>
+        <p><span>Address:</span>NO. Bangalore </p>
+        <p><span>Products available</span>Biscuts</p>
+        <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+    </div>
+  </div>
+
+    <div class="column">
+    <div class="card">
+         <img src="https://cjrwholesale.com/wp/wp-content/uploads/Grocery.jpg" alt="Shop1" style="width:100%">
+        <h1>Shop8</h1>
+        <p class="Contact">+91 96879 32415</p>
+        <p><span>Address:</span>NO. Bangalore </p>
+        <p><span>Products available</span>Biscuts</p>
+        <a href="wholesale_shop_products.html"><p><button>Buy Products</button></p></a>
+    </div>
+  </div>
+
+</div>
+{% end for %}
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+   #products {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#products tr:nth-child(even){background-color: #f2f2f2;}
+
+#products tr:hover {background-color: #ddd;}
+
+#products th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+</style>
+
+<body>
+
+
+<div class="container" style="overflow-x:auto;">
+    <h2>Products List</h2>
+  <table class="table table-bordered dark" id="products">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Available</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sunflower Oil</td>
+        <td>50</td>
+        <td><i class="fa fa-rupee-sign"></i>160</td>
+      </tr>
+      <tr>
+        <td>Toor Dal</td>
+        <td>100 kg</td>
+        <td><i class="fa fa-rupee-sign"></i>100</td>
+      </tr>
+      <tr>
+        <td>Sugar</td>
+        <td>100 kg</td>
+        <td><i class="fa fa-rupee-sign"></i>35</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

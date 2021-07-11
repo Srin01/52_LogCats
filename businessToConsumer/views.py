@@ -1,3 +1,5 @@
+from typing import Dict
+from django.http import request
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
@@ -5,9 +7,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, View
-from .models import Item, Order, OrderItem, Address, Payment, Coupon
-from .forms import AddressForm, CouponForm
+from .models import Item, Order, OrderItem, Address, Payment, Coupon,SellerDetails,IsLocalGrocery
+from .forms import AddressForm, CouponForm,AddItemForm
 from django.contrib.auth.models import User
+from datetime import timedelta
+
+import stripe
+import json
 
 class HomeView(ListView):
     model = Item
@@ -299,39 +305,32 @@ def remove_single_from_cart(request, slug):
 def customerReg(request):
     return render(request,'customerForm.html')
 
-@login_required
-def afterReg(request):
-    name=request.POST['shopname']
-    pincode=request.POST['pincode']
-    number=request.POST['number']
-    obj=SellerDetails(shopName=name, pincode=pincode,contactNo=number,user=request.user)
-    print(request.user)
-    obj.save()
-    ownedChange=IsLocalGrocery(user=request.user, isOwner=True)
-    ownedChange.isOwner=True
-    ownedChange.save()
-    return render(request,'home.html')
+def wholesale_shop(request):
+    return render(request,'wholesale_shop_products.html')
 
+def nearby_shop(request):
+    return render(request, 'nearby_wholesalers.html')
 
 @login_required
 def afterReg(request):
     name=request.POST['shopname']
     pincode=request.POST['pincode']
     number=request.POST['number']
-    obj=SellerDetails(shopName=name, pincode=pincode,contactNo=number,user=request.user)
+    obj=SellerDetails(shopName=name, pincode=pincode,contactNo=number)
     print(request.user)
     obj.save()
-    ownedChange=IsLocalGrocery(user=request.user, isOwner=True)
+    ownedChange=IsLocalGrocery( isOwner=True)
     ownedChange.isOwner=True
     ownedChange.save()
-    return render(request,'home.html')
+    return render(request,'hell.html')
+
 
 
 @login_required
 def addItem(request):
     return render(request,'addItem.html')
 
-    
+
 @login_required
 def afterAdd(request):
     title=request.POST['title']

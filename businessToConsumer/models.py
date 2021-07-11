@@ -34,12 +34,12 @@ class Item(models.Model):
 class IsLocalGrocery(models.Model):
     user= models.OneToOneField(User, on_delete=models.CASCADE)
     isOwner=models.BooleanField(default=False)
-    
+
 
 class SellerDetails(models.Model):
+    id = models.AutoField(primary_key=True)
     shopName=models.CharField(max_length=15,null=True)
     pincode=models.CharField(max_length=6,null=True)
-    user=models.OneToOneField(User, on_delete=models.CASCADE)
     contactNo=models.CharField(max_length=10,null=True)
 
 
