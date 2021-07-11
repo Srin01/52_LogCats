@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+
+
+
 {% block content %}
 
 <!DOCTYPE html>
@@ -36,13 +39,9 @@
 
 </style>
 </head>
-<body>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
 
 <div class="col-md-5 my-5 mx-auto">
-  {% for d in dictionary%}
-  <h3>{{dictionary}}</h3>
-  {% endfor %}
     <div class="card text-center shadow">
         <div class="card-header text-left"><b>Frequently bought products</b> - Pie Chart with Legends</div>
         <div class="card-body">
@@ -69,7 +68,6 @@
 		// context
 		var ctxPTD = $("#property_types").get(0).getContext("2d");
 		// data
-
 		var dataPTD = [
 			{
 				label: "Aashirvad Atta",
@@ -107,9 +105,8 @@
 				highlight: "#e6918e",
 				value: 14
 			},
-		]
 
-dataPTD[0] =
+		]
 
 		// Property Type Distribution
 		var propertyTypes = new Chart(ctxPTD).Pie(dataPTD, options);
@@ -123,4 +120,4 @@ dataPTD[0] =
 </body>
 </html>
 
-{% endblock content %}
+{% endblock %}

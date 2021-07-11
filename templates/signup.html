@@ -1,7 +1,11 @@
 {% load static %}
 
 {% load i18n %}
+{% extends 'base.html' %}
 
+
+
+{% block content %}
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 {% load cart_template_tags %}
 <!DOCTYPE html>
@@ -308,3 +312,4 @@ label
 </body>
 
 </html>
+{% endblock content %}

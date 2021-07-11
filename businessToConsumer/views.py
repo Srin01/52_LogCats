@@ -21,19 +21,24 @@ class ProductDetail(DetailView):
 
 def InventorySales(request):
 
-    items=Item.objects.all()
+    items=OrderItem.objects.all()
     dictionary= {}
-    list = [0,1,2,3,4,5]
+    labels = []
+    data = []
     for val in items:
 
-        i=getattr(val, 'title')
+        i=getattr(val, 'item')
         dictionary['title']=i
-        dictionary['count'] = 0
+        dictionary['count']=getattr(val,'quantity')
 
     for val in items:
-        i=getattr(val, 'title')
+        i=getattr(val, 'item')
         dictionary['count']+=1
-    return render(request,'hell.html',{'dictionary': dictionary, 'list':list})
+
+    for d in dictionary:
+        labels.append(d.title)
+        data.append(d.count)
+    return render(request,'hell.html',{'dictionary' : dictionary, 'labels': labels, 'data': data })
 
 
 class MyAccount(LoginRequiredMixin, View):
