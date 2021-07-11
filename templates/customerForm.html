@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ecom</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap'>
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    *{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container1{
+    width: 100%;
+    height:28vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background: url("https://take-root.ca/wp-content/uploads/2016/09/vegetarian-food-background-set-of-vegetarian-products-on-the-gray-picture-id641620530.jpg");
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 150vh;
+}
+
+
+h1{
+    border-bottom: 3px solid blue;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color:white;
+    font-weight: bold;
+    background: none;
+    margin-right: 105px;
+    margin-top: 25px;
+    font-size:3vw;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 55px;
+}
+
+
+.container{
+    width: 100%;
+     height:80vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: left;
+    top:20px;
+}
+.row1{
+   align-self: center;
+    margin-top: 250px;
+    width: 45%;
+    height: 165%;
+    border: 3px solid black;
+    border-radius:5px;
+    background-color: black;
+    opacity: .8;
+}
+
+
+
+.row{
+    position: relative;
+    color:white;
+     left:68px;
+}
+.row input{
+  margin-bottom:10px;
+    position: relative;
+    left:-2px;
+    width:70%;
+    outline:none;
+    background: none;
+    border: 0px;
+    border-bottom:3px solid blue;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-size: 1.5vw;
+}
+.row i{
+    position: absolute;
+    left:25px;
+    padding-bottom:40px;
+    color: #fff;
+}
+
+.btn{
+    width: 12em;
+    height: 40px;
+    background-color:blue;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-weight: bold;
+    font-size:1.5vw;
+    align-self: center;
+    position:unset;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+    background-color: green;
+    color:white;
+}
+label
+{
+    color:white;
+    font-family: 'EB Garamond', serif;
+    font-size:2vw;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+   .row a
+    {
+        font-size:1.5vw;
+        text-decoration: none;
+        color:blue;
+        position:relative;
+     }
+     .row a:hover
+     {
+        color:green;
+        border-bottom:1px solid green;
+        }
+       .row span
+       {
+            color:white;
+            }
+      .row span
+      {
+        font-size:1.3vw;
+      }
+      #links p a,#links1 p a
+      {
+        font-size:1vw;
+      }
+      @media screen and (max-width:992px)
+      {
+
+        .row1 {
+          width: 60%;
+        }
+      }
+      @media screen and (max-width:870px)
+      {
+
+        .row1 {
+          width: 50%;
+        }
+        
+      }
+      @media screen and (max-width:700px)
+      {
+
+        .row1 {
+          width: 80%;
+        }
+        h1 
+        {
+          font-size:25;
+        }
+        .row span
+      {
+        font-size:15;
+      }
+       .row a 
+       {
+         font-size:18;
+       }
+       label 
+       {
+         font-size:20;
+       }
+       .btn{
+         font-size:18;
+       }
+       .row input 
+       {
+         font-size:18;
+       }
+      }
+      @media screen and (max-width:530px)
+      {
+
+        .row span {
+          font-size: 12;
+        }
+        .row a 
+       {
+         font-size:15;
+       }
+      }
+      @media screen and (max-width:400px)
+      {
+        .row1 {
+          width: 96%;
+        }
+        h1 
+        {
+          font-size:8vw;
+        }
+        .row span
+      {
+        font-size:4vw;
+      }
+       .row a 
+       {
+         font-size:5vw;
+       }
+       label 
+       {
+         font-size:6vw;
+       }
+       .btn{
+         font-size:5vw;
+         height: 20vw;
+         width:45vw;
+       }
+       .row input 
+       {
+         font-size:5vw;
+       }
+      }
+      @media screen and (max-width:300px)
+      {
+
+        .row1 {
+          width: 100vw;
+        }
+      }
+  </style>
+</head>
+
+
+<body>
+
+
+     <div class="container">
+     	<div class="row1">
+     		<h1>Sign Up</h1>
+
+              <div class="row">
+               
+               <form method='POST' action="{% url 'after_reg' %}">
+                {% csrf_token %} 
+                <input placeholder="Shop Name" name='shopname'><br>
+                
+                <input placeholder="Pincode" name='pincode'><br>
+                <input placeholder="XXXXXXXXXX" type="number" name='number'><br>
+             <center> <button class="btn" type="submit" value="submit">Sign Up</button><br></center>
+
+             </form>
+              </div>
+              <div class="row">
+              <center><span>Already have an account?<br> Then please  <a href="login.html">sign in</a></span></center>
+                </div>
+            </form>
+     	</div>
+     </div>
+
+
+
+
+     <div class="container1">
+          
+     
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+    
+    </div>
+
+
+
+</body>
+
+</html>
